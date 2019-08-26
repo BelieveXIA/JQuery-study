@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery对象转化成DOM对象</title>
+	<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+</head>
+<body>
+	<div>元素一</div>
+	<div>元素二</div>
+	<div>元素三</div>
+	<script type="text/javascript">
+		var domDiv = document.getElementsByTagName('div'); //dom对象
+        	    
+      	$div =  $(domDiv);//将dom节点div转化为$div的jquery对象       
+		var $first = $div.first(); //找到第一个div元素
+		$first.css('color', 'red'); //给第一个元素设置颜色
+    </script>
+</body>
+</html>
